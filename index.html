@@ -71,7 +71,7 @@
 
     #gameCanvas {
       border: 3px solid #333;
-      background: #1a1a2e;
+      background: #ffc0e0;
       display: block;
       border-radius: 8px;
       margin-bottom: 20px;
@@ -178,15 +178,15 @@
 
     function draw() {
       // Clear canvas
-      ctx.fillStyle = '#1a1a2e';
+      ctx.fillStyle = '#ffc0e0';
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
       // Draw snake
       snake.forEach((segment, index) => {
         if (index === 0) {
-          drawTile(segment.x, segment.y, '#00ff88');
+          drawTile(segment.x, segment.y, '#ff1493');
         } else {
-          drawTile(segment.x, segment.y, '#00cc66');
+          drawTile(segment.x, segment.y, '#ff69b4');
         }
       });
 
